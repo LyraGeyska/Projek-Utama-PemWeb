@@ -31,14 +31,58 @@ body {
     padding: 20px;
 }
 
+.sidebar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebar-logo img {
+    width: 60px;
+    height: auto;
+}
+
 .sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
 .sidebar li {
-    padding: 20px;
+    display: flex;
+    align-items: center;
     font-size: 18px;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    gap: 10px;
 }
+
+.sidebar .icon {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.sidebar li.more i {
+    visibility: hidden;
+}
+
+.sidebar li span {
+    margin-left: 10px;
+}
+
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .active {
+    font-weight: bold;
+    background: none;
+}
+
+
 
 .post-btn {
     background-color: white;
@@ -205,6 +249,32 @@ body {
 .right-sidebar {
     width: 25%;
     padding: 20px;   
+}
+
+.search-bar {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16181c;
+    border-radius: 30px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
 }
 
 .suggestion-info p {
