@@ -45,44 +45,12 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
 }
 
 .sidebar li {
-    display: flex;
-    align-items: center;
+    padding: 20px;
     font-size: 18px;
-    padding: 12px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s;
-    gap: 10px;
 }
-
-.sidebar .icon {
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-}
-
-.sidebar li.more i {
-    visibility: hidden;
-}
-
-.sidebar li span {
-    margin-left: 10px;
-}
-
-.sidebar li:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.sidebar .active {
-    font-weight: bold;
-    background: none;
-}
-
-
 
 .post-btn {
     background-color: white;
@@ -133,17 +101,17 @@ body {
     margin-right: 10px;
 }
 
-.profile-name {
+/* .profile-name {
     display: flex;
     flex-direction: column;
-    color: white;
-}
+    color: black;
+} */
 
-.profile-name strong {
+/* .profile-name strong {
     font-size: 16px;
     display: flex;
     align-items: center;
-}
+} */
 
 .post-count {
     font-size: 13px;
@@ -223,10 +191,6 @@ body {
     border-bottom: 2px solid white;
 }
 
-.posts {
-    padding: 10px;
-}
-
 .post {
     display: flex;
     align-items: flex-start;
@@ -234,10 +198,24 @@ body {
     border-bottom: 1px solid #444;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .post-content p {
-    font-size: 18px;
+    /* font-size: 18px;
     margin-top: 2px;
-    width: auto;
+    width: 18vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 5px;
+}
+
+.post-pict {
+    height: 10px;
 }
 
 .pinned img {
@@ -328,28 +306,19 @@ body {
 }
 
 .follow-btn {
-    background: white;
-    color: black;
-    border: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
     padding: 5px 12px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.post-content .follow-btn {
-    background: white;
-    color: black;
+.post-content {
+    background: transparent;
+    color: white;
     border: none;
-    margin-left: 320px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.post-content h3 {
-    font-size: 25px;
 }
 
 .show-more {
@@ -366,7 +335,7 @@ body {
 }
 
 .post-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .content .suggestion-pic {
